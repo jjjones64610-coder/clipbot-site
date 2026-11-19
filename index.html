@@ -7,15 +7,24 @@
 <style>
   body { font-family: system-ui, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #111; background: #fff; }
   h1 { font-size: 1.6rem; } a { color: #c4002f; }
+  .yt { display: inline-block; margin-top: 8px; padding: 6px 10px; border: 1px solid #ddd; border-radius: 6px; font-size: .9rem; }
+  footer { margin-top: 32px; padding-top: 12px; border-top: 1px solid #eee; font-size: .9rem; }
 </style>
 </head>
 <body>
 <h1>Motivation For Years Clips</h1>
-<p>A small personal tool that turns highlight moments from live streams into short vertical videos and posts them to the creator's own accounts on TikTok, Instagram and YouTube.</p>
+<p>A small personal tool that turns trending GTA 6 highlight moments from Twitch streams into short vertical videos and posts them to its owner's own accounts on YouTube, Instagram and TikTok. Every video credits the original streamer.</p>
 <p>It is used only by its owner to manage their own accounts. It does not offer sign-ups to the public.</p>
-<ul>
-  <li><a href="terms.html">Terms of Service</a></li>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-</ul>
+<h2>How it works</h2>
+<ol>
+  <li>Finds the most-viewed GTA 6 clips on Twitch from the last 24 hours (public Twitch API).</li>
+  <li>Scans each clip for nudity on the owner's computer and skips anything flagged.</li>
+  <li>Renders a vertical video with a credit to the streamer.</li>
+  <li>Uploads it to the owner's YouTube channel using YouTube API Services, then checks its status. Clips with copyright claims or blocks are deleted everywhere.</li>
+</ol>
+<p class="yt">This app uses YouTube API Services. Users agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+<footer>
+  <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>
+</footer>
 </body>
 </html>
